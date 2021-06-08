@@ -5,9 +5,9 @@ message(STATUS "Adding linker options.")
 add_link_options(-pthread)
 
 message(STATUS "Adding compiler options.")
-add_compile_options(-static)
+add_compile_options(-static-libstdc++)
 
-message("Adding libraries")
+message(STATUS "Adding libraries.")
 add_library(SRT-LIB STATIC 
     helper_functions.cpp)
 
